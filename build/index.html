@@ -39,7 +39,7 @@
     <section class="intro">
       <h1 class="intro__title">Печатные платы</h1>
       <p class="intro__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-      <a class="intro__link intro__link--desktop" href="#">Получить бесплатную консультацию</a>
+      <a class="intro__link intro__link--desktop" href="#feedback">Получить бесплатную консультацию</a>
       <a class="intro__link intro__link--mobile" href="#">Бесплатная консультация</a>
       <a class="intro__scroll" href="#advantages">Скролл вниз</a>
       <div class="intro__picture">
@@ -108,7 +108,7 @@
       </ul>
     </div>
   </section>
-  <section class="about">
+  <section class="about container">
     <h2 class="about__title">О компании</h2>
     <p class="about__info">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые
       технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
@@ -121,23 +121,48 @@
       компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на
       предприятиях Российских Железных Дорог..</p>
     <a class="about__link" href="#">Подробнее</a>
+    <div class="about__img">
+      <picture>
+        <img src="img/2005.png" srcset="img/2005@2x.png 2x" alt="2005 год">
+      </picture>
+    </div>
     <img>
   </section>
   <section class="product">
-    <h2 class="product__title">Service Device предлагает следующие товары и услуги</h2>
-    <ul class="product__list">
-      <li class="product__item">
-        <a class="product__link" href="#">Производство печатных плат</a>
-      </li>
-      <li class="product__item">
-        <a class="product__link" href="#">Монтаж печатных плат</a>
-      </li>
-      <li class="product__item">
-        <a class="product__link" href="#">Комплектующие для светотехники</a>
-      </li>
-    </ul>
+    <div class="product__wrapper container">
+      <h2 class="product__title">Service Device предлагает следующие товары и услуги</h2>
+      <ul class="product__list">
+        <li class="product__item">
+          <a class="product__link" href="#"></a>
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/production-mob@2x.jpg 2x, img/production-mob.jpg 1x">
+            <source media="(max-width: 1023px)" srcset="img/production-tabl@2x.jpg 2x, img/production-tabl.jpg 1x">
+            <img class="product__img" src="img/production-desk.jpg" srcset="img/production-desk@2x.jpg 2x" alt="Производство">
+          </picture>
+          <p class="product__description">Производство печатных плат</p>
+        </li>
+        <li class="product__item">
+          <a class="product__link" href="#"></a>
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/mounting-mob@2x.jpg 2x, img/mounting-mob.jpg 1x">
+            <source media="(max-width: 1023px)" srcset="img/mounting-tabl@2x.jpg 2x, img/mounting-tabl.jpg 1x">
+            <img class="product__img" src="img/mounting-desk.jpg" srcset="img/mounting-desk@2x.jpg 2x" alt="Монтаж">
+          </picture>
+          <p class="product__description">Монтаж печатных плат</p>
+        </li>
+        <li class="product__item">
+          <a class="product__link" href="#"></a>
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/components-mob@2x.jpg 2x, img/components-mob.jpg 1x">
+            <source media="(max-width: 1023px)" srcset="img/components-tabl@2x.jpg 2x, img/components-tabl.jpg 1x">
+            <img class="product__img" src="img/components-desk.jpg" srcset="img/components-desk@2x.jpg 2x" alt="Комплектующие">
+          </picture>
+          <p class="product__description">Комплектующие для светотехники</p>
+        </li>
+      </ul>
+    </div>
   </section>
-  <section class="feedback">
+  <section class="feedback" id="feedback">
     <h2 class="feedback__title">Остались вопросы? Задайте их нам!</h2>
     <p class="feedback__info">Мы проконсультируем Вас бесплатно</p>
     <form class="feedback__form" method="GET">
