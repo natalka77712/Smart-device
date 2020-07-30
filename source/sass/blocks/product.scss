@@ -99,8 +99,12 @@
   font-family: $robotoCondensed;
   z-index: 1;
 
-
   @media (max-width: $tablet-width) {
+    top: 43px;
+    left: 44px;
+  }
+
+  @media (max-width: $mobile-width) {
     top: 21px;
     left: 35px;
   }
