@@ -52,6 +52,7 @@
 }
 
 .page-header__logo-title {
+  @include reset-p;
   font-family: $robotoCondensed;
   font-size: 25px;
   line-height: 29px;
@@ -95,6 +96,8 @@
   justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
+
+  @include reset-list;
 
   @media (max-width: $tablet-width) {
     padding-bottom: 7px;

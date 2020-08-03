@@ -2,7 +2,7 @@
   background: $blue url("../img/polygons-feedback.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top 0 left -119px, center;
+  background-position: top 0 left -130px, center;
 
   @media (max-width: $tablet-width) {
     background: none;
@@ -16,13 +16,13 @@
   padding-bottom: 111px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 82px;
+    padding-top: 80px;
     padding-bottom: 105px;
   }
 
   @media (max-width: $mobile-width) {
-    padding-top: 32px;
-    padding-bottom: 43px;
+    padding-top: 29px;
+    padding-bottom: 45px;
   }
 }
 
@@ -34,6 +34,7 @@
   font-family: $robotoCondensed;
 
   @media (max-width: $tablet-width) {
+    margin: 0 0 13px;
     font-size: 32px;
     line-height: 45px;
   }
@@ -45,12 +46,13 @@
 }
 
 .feedback__info {
+  @include reset-p;
   margin-bottom: 51px;
   font-size: 16px;
   line-height: 22px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 61px;
+    margin-bottom: 56px;
   }
 
   @media (max-width: $mobile-width) {
@@ -89,25 +91,33 @@
   }
 }
 
+.feedback__form textarea,
 .feedback__form input {
-  margin-bottom: 36px;
-  padding: 15px 14px 18px 24px;
-  width: 48%;
   font-family: inherit;
   text-align: left;
-  color: #ffffff;
   background: $light-blue;
   border: 0;
-
-  @media (max-width: $mobile-width) {
-    padding-left: 17px;
-    width: 100%;
-  }
 
   &::placeholder {
     color: white;
     font-size: 16px;
     line-height: 22px;
+  }
+}
+
+.feedback__form input {
+  margin-bottom: 36px;
+  padding: 15px 14px 18px 24px;
+  width: 48%;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 34px;
+    padding-left: 17px;
+    width: 100%;
   }
 
   &:first-of-type {
@@ -132,19 +142,8 @@
   padding: 20px;
   width: 100%;
   min-height: 154px;
-  font-family: inherit;
-  text-align: left;
-  color: white;
-  background: $light-blue;
-  border: 0;
   resize: none;
   outline: 0;
-
-  &::placeholder {
-    color: white;
-    font-size: 16px;
-    line-height: 22px;
-  }
 
   &:focus {
     outline: 1px solid white;
@@ -155,7 +154,9 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 59px;
+    margin-bottom: 53px;
+    padding: 15px;
+    min-height: 159px;
   }
 
   @media (max-width: $mobile-width) {
@@ -267,4 +268,12 @@
     padding-left: 33px;
     width: 100%;
   }
+}
+
+.feedback__form-group input[type="checkbox"] + label::after {
+  content: none;
+}
+
+.feedback__form-group input[type="checkbox"]:checked + label::after {
+  content: "";
 }

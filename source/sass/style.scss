@@ -1,6 +1,7 @@
 
 // Globals
 @import "fonts.scss";
+@import "mixins.scss";
 @import "variables.scss";
 @import "scaffolding.scss";
 
@@ -9,5 +10,9 @@
 @import "blocks/advantages.scss";
 @import "blocks/feedback.scss";
 @import "blocks/intro.scss";
+@import "blocks/modal.scss";
+@import "blocks/nav.scss";
+@import "blocks/page-footer.scss";
 @import "blocks/page-header.scss";
 @import "blocks/product.scss";
+@import "blocks/social.scss";

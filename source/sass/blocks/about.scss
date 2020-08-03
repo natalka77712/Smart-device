@@ -1,11 +1,11 @@
 .about {
   padding-left: 197px;
-  margin: 75px auto 123px;
+  margin: 75px auto 120px;
   position: relative;
 
   @media (max-width: $tablet-width) {
     padding-left: 217px;
-    margin: 31px auto 99px;
+    margin: 31px auto 97px;
   }
 
   @media (max-width: $mobile-width) {
@@ -15,7 +15,7 @@
 }
 
 .about__title {
-  margin: 0 0 20px;
+  margin: 0 0 21px;
   font-size: 36px;
   line-height: 51px;
   font-weight: 400;
@@ -28,21 +28,15 @@
   }
 
   @media (max-width: $mobile-width) {
+    margin: 0 0 20px;
     font-size: 28px;
     line-height: 39px;
   }
 }
 
-.about__info {
-  margin-bottom: 20px;
-
-  @media (max-width: $mobile-width) {
-    margin-bottom: 40px;
-  }
-}
-
 .about__info,
 .about__customers {
+  @include reset-p;
   font-size: 16px;
   line-height: 22px;
   color: $dark-grey;
@@ -70,6 +64,15 @@
     &--tablet {
       margin-bottom: 44px;
     }
+  }
+}
+
+.about__info {
+  @include reset-p;
+  margin-bottom: 20px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 40px;
   }
 }
 

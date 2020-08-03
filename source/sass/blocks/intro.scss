@@ -41,6 +41,7 @@
 
 .intro__text {
   position: relative;
+  @include reset-p;
   padding-left: 94px;
   margin-bottom: 25px;
   font-size: 22px;

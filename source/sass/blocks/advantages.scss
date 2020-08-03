@@ -24,6 +24,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  @include reset-list;
 }
 
 .advantages__item {
@@ -39,6 +41,13 @@
 
   &:hover {
     background-color: $blue;
+
+    .advantages__icon,
+    .advantages__description,
+    .advantages__title {
+      color: white;
+      stroke: white;
+    }
   }
 
   &:nth-child(2n) {
@@ -101,6 +110,7 @@
 }
 
 .advantages__description {
+  @include reset-p;
   font-size: 16px;
   line-height: 22px;
   color: $dark-grey;
