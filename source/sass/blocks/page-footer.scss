@@ -221,9 +221,7 @@
 }
 
 .page-footer__contacts-list {
-
   @include reset-list;
-
 
   @media (max-width: $mobile-width) {
     display: none;

@@ -1,10 +1,11 @@
 .modal {
-  display: flex;
+  display: none;
+  //display: flex;
   position: fixed;
   z-index: 25;
   width: 490px;
   left: 50%;
-  top: 35.7%;
+  top: 52%;
   transform: translateX(-50%) translateY(-50%);
 }
 

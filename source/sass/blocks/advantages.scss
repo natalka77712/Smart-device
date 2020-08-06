@@ -42,9 +42,13 @@
   &:hover {
     background-color: $blue;
 
-    .advantages__icon,
+    .advantages__icon {
+      fill: white;
+    }
+
     .advantages__description,
-    .advantages__title {
+    .advantages__title,
+    .advantages__icon {
       color: white;
       stroke: white;
     }
@@ -57,6 +61,21 @@
   @media (max-width: $tablet-width) {
     padding: 23px 22px 0 25px;
     min-height: 232px;
+
+    .advantages__icon--hired {
+      width: 32px;
+      height: 32px;
+    }
+
+    .advantages__icon--detective {
+      width: 30px;
+      height: 26px;
+    }
+
+    .advantages__icon--tag {
+      width: 32px;
+      height: 32px;
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -84,7 +103,7 @@
 }
 
 .advantages__icon {
-  stroke: $blue;
+  fill: $blue;
 }
 
 .advantages__title {

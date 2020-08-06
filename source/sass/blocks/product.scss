@@ -36,10 +36,18 @@
   @include reset-list;
 }
 
+.product__item,
+.product__link {
+  width: calc(33.3% - 20px);
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
 .product__item {
   position: relative;
   margin: 59px 30px 0 0;
-  width: calc(33.3% - 20px);
   overflow: hidden;
   cursor: pointer;
 
@@ -69,10 +77,6 @@
 
   &:nth-child(3n) {
     margin-right: 0;
-  }
-
-  &:hover {
-    opacity: 0.5;
   }
 
   @media (max-width: $tablet-width) {

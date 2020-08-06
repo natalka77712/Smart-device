@@ -41,6 +41,7 @@
 
 .intro__text {
   position: relative;
+
   @include reset-p;
   padding-left: 94px;
   margin-bottom: 25px;
@@ -93,12 +94,14 @@
   background-color: $blue;
   border: 1px solid $blue;
   border-radius: 5px;
-
-  &:hover {
-    border: 1px solid white;
-    background-color: transparent;
-  }
 }
+
+.intro__link--desktop:hover,
+.intro__link--mobile:hover {
+  border: 1px solid white;
+  background-color: transparent;
+}
+
 
 .intro__link--mobile {
   display: none;
@@ -139,6 +142,10 @@
   cursor: pointer;
   opacity: 0.5;
   transform: rotate(-90deg);
+
+  &:hover {
+    opacity: 0.7;
+  }
 
   @media (max-width: $tablet-width) {
     display: none;
