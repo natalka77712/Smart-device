@@ -43,14 +43,14 @@
     background-color: $blue;
 
     .advantages__icon {
-      fill: white;
+      fill: $blue;
     }
 
     .advantages__description,
     .advantages__title,
     .advantages__icon {
       color: white;
-      stroke: white;
+      fill: white;
     }
   }
 
@@ -58,9 +58,37 @@
     margin-right: 0;
   }
 
+  .advantages__icon--stopwatch {
+    width: 29px;
+    height: 35px;
+  }
+
+  .advantages__icon--hired {
+    width: 35px;
+    height: 35px;
+  }
+
+  .advantages__icon--detective {
+    width: 36px;
+    height: 31px;
+  }
+
+  .advantages__icon--tag {
+    width: 35px;
+    height: 35px;
+  }
+
+
   @media (max-width: $tablet-width) {
-    padding: 23px 22px 0 25px;
-    min-height: 232px;
+    .advantages__item {
+      padding: 23px 22px 0 25px;
+      min-height: 232px;
+    }
+
+    .advantages__icon--stopwatch {
+      width: 30px;
+      height: 36px;
+    }
 
     .advantages__icon--hired {
       width: 32px;
@@ -68,13 +96,13 @@
     }
 
     .advantages__icon--detective {
-      width: 30px;
-      height: 26px;
+      width: 37px;
+      height: 31px;
     }
 
     .advantages__icon--tag {
-      width: 32px;
-      height: 32px;
+      width: 36px;
+      height: 35px;
     }
   }
 

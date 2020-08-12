@@ -1,12 +1,14 @@
 .modal {
-  display: none;
-  //display: flex;
   position: fixed;
   z-index: 25;
   width: 490px;
   left: 50%;
   top: 52%;
   transform: translateX(-50%) translateY(-50%);
+}
+
+.modal--close {
+  display: none;
 }
 
 .modal__wrapper {
@@ -55,6 +57,7 @@
   text-align: left;
   background: $light-blue;
   border: 0;
+  color: white;
 
   &::placeholder {
     color: white;
