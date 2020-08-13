@@ -1,6 +1,6 @@
 .about {
   padding-left: 197px;
-  margin: 75px auto 120px;
+  margin: 75px auto 108px;
   position: relative;
 
   @media (max-width: $tablet-width) {
@@ -52,7 +52,6 @@
   @media (max-width: $tablet-width) {
     &--tablet {
       display: block;
-      margin-bottom: 59px;
     }
 
     &--desktop {

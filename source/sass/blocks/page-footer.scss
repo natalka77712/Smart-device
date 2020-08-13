@@ -4,11 +4,11 @@
   padding: 61px 0 53px 18px;
 
   @media (max-width: $tablet-width) {
-    padding: 10px 0 33px 22px;
+    padding: 20px 0 33px 22px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 0;
+    padding: 46px 0 0;
   }
 }
 
@@ -29,7 +29,7 @@
 }
 
 .page-footer__logo-img {
-  margin: 0 0 0 5px;
+  margin: 5px 0 10px -4px;
 }
 
 .page-footer__logo-link:hover {
@@ -177,7 +177,6 @@
 
     @media (max-width: $mobile-width) {
       padding-left: 5%;
-      padding-top: 8%;
     }
   }
 
