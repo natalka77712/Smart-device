@@ -1,4 +1,14 @@
 .advantages {
+  background: url("../img/polygons.webp") center no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/polygons@2x.webp") center no-repeat;
+    background-size: cover;
+  }
+}
+
+.no-webp .advantages {
   background: url("../img/polygons.jpg") center no-repeat;
   background-size: cover;
 

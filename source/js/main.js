@@ -13,9 +13,22 @@
   var messageModal = document.querySelector('#message-modal');
   var navFooter = document.querySelector('.nav__list');
   var contactList = document.querySelector('.page-footer__contacts-list');
-  var toggleFooter = document.querySelectorAll('.page-footer__toggle');
+  var btnNav = document.querySelector('#btn-nav');
+  var btnContact = document.querySelector('#btn-contact');
   var esc = 27;
+  var customersInfo = document.querySelector('[class="about__customers about__customers"]');
 
+
+  var maxTextSize = customersInfo.innerText;
+  var minTextSize = customersInfo.innerText.slice(0, -129) + '...';
+
+  window.addEventListener('resize', function () {
+    if (window.innerWidth < 768) {
+      customersInfo.innerText = minTextSize;
+    } else {
+      customersInfo.innerText = maxTextSize;
+    }
+  });
 
   // popup
   modal.addEventListener('click', function (e) {
@@ -80,27 +93,24 @@
   });
 
   // accordion
-  toggleFooter[0].addEventListener('touchstart', function () {
-    if (navFooter.style.display === 'none') {
-      navFooter.style.display = 'block';
-      navFooter.classList.remove('menu-closed');
-      contactList.style.display = 'none';
-      contactList.classList.add('menu-closed');
-    } else {
-      navFooter.style.display = 'none';
-      navFooter.classList.add('menu-closed');
-    }
-  });
+  var toggle = function toogle(e, btn, changeClass) {
+    e.preventDefault();
 
-  toggleFooter[1].addEventListener('touchstart', function () {
-    if (contactList.style.display === 'none') {
-      contactList.style.display = 'block';
-      contactList.classList.remove('menu-closed');
-      navFooter.style.display = 'none';
-      navFooter.classList.add('menu-closed');
+    if (btn.classList.contains('page-footer__toggle--plus')) {
+      btn.classList.remove('page-footer__toggle--plus');
+      btn.classList.add('page-footer__toggle--minus');
+      changeClass.style.display = 'block';
     } else {
-      contactList.style.display = 'none';
-      contactList.classList.add('menu-closed');
+      btn.classList.remove('page-footer__toggle--minus');
+      btn.classList.add('page-footer__toggle--plus');
+      changeClass.style.display = 'none';
     }
+  };
+
+  btnNav.addEventListener('click', function (e) {
+    return toggle(e, btnNav, navFooter);
+  });
+  btnContact.addEventListener('click', function (e) {
+    return toggle(e, btnContact, contactList);
   });
 })();

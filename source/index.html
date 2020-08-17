@@ -11,7 +11,7 @@
 <div style="display:none">
   <include src="build/img/sprite_auto.svg"></include>
 </div>
-<header class="page-header">
+<header class="no webp page-header">
   <div class="page-header__container container container--extra">
     <div class="page-header__wrapper">
       <a class="page-header__logo-link">
@@ -68,7 +68,7 @@
   </div>
 </header>
 <main>
-  <section class="advantages" id="advantages">
+  <section class="no webp advantages" id="advantages">
     <div class="advantages__wrapper container">
       <h2 class="visually-hidden">Преимущества компании</h2>
       <ul class="advantages__list">
@@ -112,13 +112,10 @@
     <p class="about__info">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые
       технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
     </p>
-    <p class="about__customers about__customers tablet">Наши поставщики - мировые производители электронных
+    <p class="about__customers about__customers">Наши поставщики - мировые производители электронных
       компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на
       предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших
       клиентов крупнейшие Производители светотехники России.</p>
-    <p class="about__customers about__customers--tablet">Наши поставщики - мировые производители электронных
-      компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на
-      предприятиях Российских Железных Дорог..</p>
     <a class="about__link" href="#">Подробнее</a>
     <div class="about__img">
       <!-- 1х: 244px; 2x: 487px -->
@@ -250,8 +247,8 @@
       </ul>
     </div>
     <div class="page-footer__nav nav">
-      <h3 class="nav-title nav-title--closed">Разделы сайта</h3>
-      <button type="button" class="page-footer__toggle" aria-label="Открыть меню"></button>
+      <h3 class="nav-title">Разделы сайта</h3>
+      <button type="button" class="page-footer__toggle page-footer__toggle--plus" id="btn-nav" aria-label="Открыть меню"></button>
       <ul class="nav__list menu-closed">
         <li class="nav__item"><a class="nav__link">О компании</a></li>
         <li class="nav__item"><a class="nav__link">Продукты</a></li>
@@ -264,7 +261,7 @@
     </div>
     <div class="page-footer__content">
       <h3 class="page-footer__title ">Наш офис</h3>
-      <button type="button" class="page-footer__toggle" aria-label="Открыть меню"></button>
+      <button type="button" class="page-footer__toggle page-footer__toggle--plus"  id="btn-contact" aria-label="Открыть меню"></button>
       <ul class="page-footer__contacts-list menu-closed">
         <li class="page-footer__contacts-item"><a>г. Мытищи, Олимпийский проспект, д.10</a></li>
         <li class="page-footer__contacts-item"><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>

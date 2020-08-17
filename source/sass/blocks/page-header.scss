@@ -2,13 +2,23 @@
   min-height: 868px;
   padding-bottom: 30px;
   padding-top: 20px;
-  background: $grey url("../img/bg-desk.jpg") center no-repeat;
+  background: $grey url("../img/bg-desk.webp") center no-repeat;
   background-size: cover;
   z-index: 0;
   overflow: hidden;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-desk@2x.jpg") center no-repeat;
+    background: url("../img/bg-desk@2x.webp") center no-repeat;
+  }
+
+  .no-webp .page-header {
+    background: url("../img/bg-desk.jpg") center no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-desk@2x.jpg") center no-repeat;
+      background-size: cover;
+    }
   }
 
   @media (max-width: $tablet-width) {

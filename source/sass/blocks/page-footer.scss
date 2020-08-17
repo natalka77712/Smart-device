@@ -212,12 +212,20 @@
     right: 10px;
     height: 16px;
     border: 0;
-    background: url("../img/icon-plus.svg") no-repeat 50% 50%;
     background-color: transparent;
     cursor: pointer;
     outline: 0;
   }
+
+  .page-footer__toggle--plus {
+    background: url("../img/icon-plus.svg") no-repeat 50% 50%;
+  }
+
+  .page-footer__toggle--minus {
+    background: url("../img/icon-minus.svg") no-repeat 50% 50%;
+  }
 }
+
 
 .page-footer__contacts-list {
   @include reset-list;
